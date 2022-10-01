@@ -7,6 +7,12 @@ function myFunction() {
   }
 }
 
+/* Changes the active class in the navbar */
+$(".topnav a").click(function() {
+  $(".topnav a.active").removeClass("active");
+  $(this).addClass("active");
+});
+
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
   var prevScrollpos = window.pageYOffset;
   window.onscroll = function() {
@@ -23,7 +29,7 @@ function myFunction() {
 
   $(function () {
     count = 0;
-    wordsArray = ["cool", "amazing", "super"];
+    wordsArray = ["Software Engineer", "Web Developer"];
     setInterval(function () {
       count++;
       $("#word").fadeOut(500, function () {
