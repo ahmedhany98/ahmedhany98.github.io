@@ -80,14 +80,17 @@ This class makes the topnav look good on small screens (display the links vertic
 /* Container holding the image and the text */
 .container {
   position: relative;
-  text-align: center;
   color: white;
 }
 
 /* Centered text */
-.centered {
+.centered1 {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 15%;
+  left: 70px;
+}
+.centered2 {
+  position: absolute;
+  top: 21%;
+  left: 70px;
 }

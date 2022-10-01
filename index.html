@@ -27,7 +27,8 @@
 
 <div class="container">
   <img src="test.webp" alt="Snow" style="width:100%;">
-  <div class="centered">Centered</div>
+  <div class="centered1"><h1>I'M AHMED HANY</h1></div>
+  <div class="centered2"><h3>A <span id="word">beautiful</span></h3></div>
 </div>
 
 <div style="padding-left:16px">
@@ -35,7 +36,19 @@
   <p>Resize the browser window to see how it works.</p>
 </div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
 <script>
+  $(function () {
+  count = 0;
+  wordsArray = ["cool", "amazing", "super"];
+  setInterval(function () {
+    count++;
+    $("#word").fadeOut(500, function () {
+      $(this).text(wordsArray[count % wordsArray.length]).fadeIn(500);
+    });
+  }, 2000);
+});
 </script>
 
 <!--  Custom JS  -->
