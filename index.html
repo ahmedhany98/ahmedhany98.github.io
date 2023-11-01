@@ -1,56 +1,251 @@
-<!-- https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
 <!DOCTYPE html>
 <html>
-<head>
+
+<title>Ahmed Hany</title>
+
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/general.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/about.css">
+<link rel="stylesheet" href="css/photos.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/style.css">
+
 <style>
-/* Any css code */
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
-</head>
 
 
+<body class="w3-black">
 
-<body>
-
-<div class="topnav" id="myTopnav">
-  <a href="#home" class="active">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="Images/instabug_logo_transparent.png" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
   </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
 </div>
 
 
-<div class="container">
-  <div class="centered1"><h1>I'M AHMED HANY</h1></div>
-  <div class="centered2"><h3>A <span id="word">Software Engineer</span></h3></div>
-  <img class="profile" src="Images/Hany_transparent.png">
-  <a href="https://www.facebook.com/ahmed.hany.75"            class="fa fa-facebook"></a>
-  <a href="https://www.linkedin.com/in/ahmed-hany-4a7310152/" class="fa fa-linkedin"></a>
-  <a href="https://github.com/ahmedhany98"                    class="fa fa-github"></a>
-</div>
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-content w3-padding-32 w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Ahmed Hany.</h1>
+    <br><br><br><br>
+    <h3>A <span id="word">Software Engineer.</span></h3>
+    <br><br><br><br><br><br><br><br><br>
+    <div class="w3-content w3-padding-32 w3-xxlarge">
+      <a class="fa fa-facebook-official w3-hover-opacity" href="https://www.facebook.com/ahmed.hany.75">          </a>
+      <a class="fa fa-instagram w3-hover-opacity"         href="https://www.instagram.com/ahmedhany75">           </a>
+      <a class="fa fa-linkedin w3-hover-opacity"          href="https://www.linkedin.com/in/ahmed-hany-4a7310152"></a>
+      <a class="fa fa-github w3-hover-opacity"            href="https://github.com/ahmedhany98">                  </a>
+    </div>
+    <img src="Images/Hany_transparent.png" alt="boy" class="w3-image hany-image-right" width="322" height="360">
+  </header>
 
-<div style="padding-left:16px">
-  <h2>Responsive Topnav Example</h2>
-  <p>Resize the browser window to see how it works.</p>
-  <p>Test Scrolling.</p>
-  <p>Test Scrolling.</p>
-  <p>Test Scrolling.</p>
-  <p>Test Scrolling.</p>
-  <p>Test Scrolling.</p>
-  <p>Test Scrolling.</p>
-  <p>Test Scrolling.</p>
+
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+
+
+    <h2 class="w3-text-light-grey">Summary</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>I'm a software engineer. I Currently work as a backend developer || at Instabug.</p>
+    <p>I have graduated from Faculty of Engineering - Alexandria University with a Bachelor's Degree in Computer and Communication Engineering.</p>
+    <p>I have +3 years of experience in software engineering roles. I worked at different scale companies, where I gained the experience of working with clients and teams from all over the world.</p>
+    <p>I'm interested in software development and cloud technologies, also I'm active to learn all the latest technologies related to the Software Engineering field.</p>
+
+
+    <br>
+
+
+
+    <h2 class="w3-text-light-grey">Experience</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <div>
+      <ol>
+
+        <li>
+          <div class="w3-hover-black grid-2" onclick="window.open('https://instabug.com', '_blank');">
+            <div class="py-4">
+              <header>April 2023 - Present</header>
+              <br>
+              <header>May 2022 - March 2023</header>
+            </div>
+            <div>
+              <h3>Backend developer II - Instabug</h3>
+              <h3>Backend developer I - Instabug</h3>
+              <p>Deliver high-quality, robust production code for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship.</p>
+              <ul class="flex">
+                <li><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">Ruby on Rails</div></li>
+                <li><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">MySQL</div></li>
+                <li><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">Redis</div></li>
+                <li><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">Elasticsearch</div></li>
+                <li><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">Sidekiq</div></li>
+                <li><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">Docker</div></li>
+                <li><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">AWS</div></li>
+                <li><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">Kubernetes</div></li>
+                <li><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">RSpec</div></li>
+                <li><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">Golang</div></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="w3-hover-black grid-2" onclick="window.open('https://www.ejada.com', '_blank');">
+            <header class="py-4">Aug 2021 - May 2022</header>
+            <div>
+              <h3>Software Engineer - Ejada Systems</h3>
+              <p>Developed and styled interactive web apps for Apple Music, including the UI of Apple Music's embeddable web player widget for in-browser user authorization and full song playback.</p>
+              <ul class="flex">
+                <li><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">C#</div></li>
+                <li><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">.Net</div></li>
+                <li><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">Git</div></li>
+                <li><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">Tableau</div></li>
+                <li><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">Alteryx</div></li>
+                <li><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">MS Power BI</div></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="w3-hover-black grid-2" onclick="window.open('https://eng.alexu.edu.eg/index.php/en', '_blank');">
+            <header class="py-4">Oct 2021 - Jan 2023</header>
+            <div>
+              <h3>Teaching Assistant - Faculty Of Engineering, Alexandria Univeristy</h3>
+              <p>Collaborated with other student designers and engineers on pro-bono projects to create new brands, design systems, and websites for organizations in the community.</p>
+              <ul class="flex">
+                <li><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">Operating system</div></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="w3-hover-black grid-2" onclick="window.open('https://inovaeg.com', '_blank');">
+            <header class="py-4">2020</header>
+            <div>
+              <h3>iOS Intern - INOVA LLC</h3>
+              <p>Worked with the UI team to engineer and improve major features of Starry's customer-facing Android app.</p>
+              <ul class="flex">
+                <li><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">Swift</div></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="w3-hover-black grid-2" onclick="window.open('https://eng.alexu.edu.eg/index.php/en', '_blank');">
+            <header class="py-4">2020</header>
+            <div>
+              <h3>Machine Learning Intern - Alexandria University</h3>
+              <p>Developed, maintained, and shipped production code for client websites. Clients included JetBlue, Lovesac, U.S. Cellular, U.S. Department of Defense, and more.</p>
+              <ul class="flex">
+                <li><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">Deep Learning Specialization</div></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+
+    <br>
+
+
+    <button class="w3-button w3-light-grey w3-padding-large w3-section" onclick="location.href='Images/Ahmed_Hany_Resume.pdf'">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+  </div>
+  <!-- End About Section -->
+
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">My Photos</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="grid-photos">
+      <img src="Images/my_photos/23Q2_ultimate_team.png" class="size-photos px-3">
+      <img src="Images/my_photos/pricing-11.jpg" class="size-photos px-3">
+      <img src="Images/my_photos/core.png" class="size-photos px-3">
+    </div>
+  </div>
+  <!-- End Portfolio Section -->
+
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Alexandria, Egypt</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +20 1285941584</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: ahmedhany988@gmail.com</p>
+    </div><br>
+
+    <p>Let's get in touch. Send to me a message:</p>
+    <button class="w3-button w3-light-grey w3-padding-large" onclick="location.href='mailto:ahmedhany988@gmail.com'">
+      <i class="fa fa-paper-plane"></i> SEND MESSAGE
+    </button>
+  </div>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-xxlarge">
+    <a class="fa fa-facebook-official w3-hover-opacity" href="https://www.facebook.com/ahmed.hany.75">          </a>
+    <a class="fa fa-instagram w3-hover-opacity"         href="https://www.instagram.com/ahmedhany75">           </a>
+    <a class="fa fa-linkedin w3-hover-opacity"          href="https://www.linkedin.com/in/ahmed-hany-4a7310152"></a>
+    <a class="fa fa-github w3-hover-opacity"            href="https://github.com/ahmedhany98">                  </a>
+  </footer>
+  <!-- End footer -->
+
 </div>
+<!-- END PAGE CONTENT -->
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 <!--  Custom JS  -->
 <script src="js/main.js"></script>
-</body>
 
+
+</body>
 
 </html>

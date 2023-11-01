@@ -1,0 +1,6 @@
+.hany-image-right {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translate(0%,-50%);
+}

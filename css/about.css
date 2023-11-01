@@ -1,0 +1,9 @@
+.grid-2 {
+display: grid;
+grid-template-columns: 20% auto;
+}
+
+.py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
